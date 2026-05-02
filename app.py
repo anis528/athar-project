@@ -516,7 +516,7 @@ FLAG_DESC = (
 
 THEMES = {
     "بَطَلُ الْفَضَاءِ": {
-        "image": "assets/theme_space.png",
+        "image": "theme_space.png",
         "desc": "رَائِدُ فَضَاءٍ • عَلَمُ الْجَزَائِرِ • الْقَمَرُ",
         "costume": (
             "a brave young Algerian astronaut with authentic Algerian features — "
@@ -539,7 +539,7 @@ THEMES = {
         ]
     },
     "الْبَطَلُ الْمُنْقِذُ بِبُرْنُوسٍ": {
-        "image": "assets/theme_burnous.png",
+        "image": "theme_burnous.png",
         "desc": "بُرْنُسٌ أَبْيَضُ • مَقَامُ الشَّهِيدِ • الْجَزَائِرُ",
         "costume": (
             "a noble young Algerian hero with authentic Algerian features — "
@@ -561,7 +561,7 @@ THEMES = {
         ]
     },
     "الْأَمِيرَةُ الْجَمِيلَةُ بِالْكَارَاكُو": {
-        "image": "assets/theme_princess.png",
+        "image": "theme_princess.png",
         "desc": "كَارَاكُو جَزَائِرِيٌّ • خَيْطُ الرُّوحِ • قَصْرٌ سِحْرِيٌّ",
         "costume": (
             "a beautiful young Algerian princess with authentic Algerian features — "
@@ -583,7 +583,7 @@ THEMES = {
         ]
     },
     "الطَّيَّارُ الشُّجَاعُ": {
-        "image": "assets/theme_pilot.png",
+        "image": "theme_pilot.png",
         "desc": "طَيَّارٌ جَزَائِرِيٌّ • جِبَالُ الأَطْلَسِ • السَّمَاءُ",
         "costume": (
             "a courageous young Algerian vintage aviator with authentic Algerian features — "
@@ -605,7 +605,7 @@ THEMES = {
         ]
     },
     "الْمُخْتَرِعُ الصَّغِيرُ": {
-        "image": "assets/theme_inventor.png",
+        "image": "theme_inventor.png",
         "desc": "مُخْتَرِعٌ جَزَائِرِيٌّ • نُقُوشُ الزَّلِيجِ • الْعِلْمُ",
         "costume": (
             "a brilliant young Algerian scientist inventor with authentic Algerian features — "
@@ -1303,7 +1303,7 @@ def make_watermarked_preview(image_url: str) -> bytes | None:
                 Image.Resampling.LANCZOS
             )
 
-        font_path = os.path.join(os.path.dirname(__file__), 'fonts/Amiri-Bold.ttf')
+        font_path = os.path.join(os.path.dirname(__file__), 'Amiri-Bold.ttf')
         try:
             font_main = ImageFont.truetype(font_path, size=int(img.width * 0.06))
             font_band = ImageFont.truetype(font_path, size=20)
