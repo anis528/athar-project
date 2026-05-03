@@ -11,7 +11,7 @@ import urllib.parse
 from PIL import Image
 import io
 from db import init_db, create_order, list_orders, get_order, format_order_id
-
+st.cache_data.clear() # لتنظيف الذاكرة القديمة
 st.set_page_config(
     page_title="أثر - كتاب طفلك السحري",
     page_icon="✨",
