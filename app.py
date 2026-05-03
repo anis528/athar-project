@@ -1164,7 +1164,7 @@ html, body {{
 
         <div class="ornament">✦ ✦ ✦</div>
 
-<div class="story-title">{'بطلة' if 'الأميرة' in theme_key else 'بطل'} من قلب الجزائر</div>
+<div class="story-title">{'بطلة' if 'الأميرة' in theme_key else 'بطل'} من قلب الجزائر</div> # v2 update
 <div class="divider">
           <div class="divider-line"></div>
           <div class="divider-gem">◆</div>
