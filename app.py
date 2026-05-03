@@ -1164,7 +1164,7 @@ html, body {{
 
         <div class="ornament">✦ ✦ ✦</div>
 
-<div class="story-title">{'بطلة' if 'الأميرة' in theme_key else 'بطل'} من قلب الجزائر</div> # v2 update
+<div class="story-title">{'بطلة' if 'الأميرة' in theme_key else 'بطل'} من قلب الجزائر</div>
 <div class="divider">
           <div class="divider-line"></div>
           <div class="divider-gem">◆</div>
@@ -1179,8 +1179,7 @@ html, body {{
         <div class="paywall">
           <div class="paywall-icon">🔒 📖</div>
           <p>
-            <strong>لإكمال بقية القصة المخصصة لطفلك،</strong><br>
-            يرجى إتمام الطلب للطباعة الفاخرة
+           <strong>لإكمال بقية القصة المخصصة لـ {'بطلتكم' if 'الأميرة' in theme_key else 'بطلكم'}...</strong>
           </p>
         </div>
 
