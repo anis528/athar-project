@@ -1164,8 +1164,7 @@ html, body {{
 
         <div class="ornament">✦ ✦ ✦</div>
 
-        <div class="story-title">بطلٌ من قلب الجزائر</div>
-
+<div class="story-title">{'بطلة' if 'الأميرة' in selected_theme else 'بطل'} من قلب الجزائر</div>
         <div class="divider">
           <div class="divider-line"></div>
           <div class="divider-gem">◆</div>
