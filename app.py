@@ -1,5 +1,5 @@
 import os
-os.environ["REPLICATE_API_TOKEN"] = "9651a8f4-ba52-419f-b656-762d90703019"
+os.environ["REPLICATE_API_TOKEN"] = st.secrets["REPLICATE_API_TOKEN"]
 import streamlit as st
 import streamlit.components.v1 as components
 import replicate
