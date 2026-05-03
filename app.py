@@ -1,17 +1,19 @@
 import os
-os.environ["REPLICATE_API_TOKEN"] = st.secrets["REPLICATE_API_TOKEN"]
 import streamlit as st
-import streamlit.components.v1 as components
 import replicate
-import os
-import json
+import streamlit.components.v1 as components
+
+# الآن نضع سطر المفتاح هنا (بعد تعريف st)
+os.environ["REPLICATE_API_TOKEN"] = st.secrets["REPLICATE_API_TOKEN"]
+
+# سطر التنظيف
+st.cache_data.clear()
 import requests
 import base64
 import urllib.parse
 from PIL import Image
 import io
 from db import init_db, create_order, list_orders, get_order, format_order_id
-st.cache_data.clear() # لتنظيف الذاكرة القديمة
 st.set_page_config(
     page_title="أثر - كتاب طفلك السحري",
     page_icon="✨",
